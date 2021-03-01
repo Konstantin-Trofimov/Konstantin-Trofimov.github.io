@@ -20,14 +20,5 @@ export default {
 </script>
 
 <style lang="scss">
-	.traffic-light-img {
-		z-index: 0;
-		position: absolute;
-		left: 50%;
-		top: 44%;
-		transform: translate(-50%, -50%);
-		margin: 0 auto;
-		width: 525px;
-		height: 614px;
-	}	
+
 </style>

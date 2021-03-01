@@ -1,4 +1,4 @@
-@import 'media.scss';
+@import 'variables';
 
 .v-lamp {
 	margin-top: 87px;
@@ -15,10 +15,10 @@
 
 .lamp {
 	z-index: 3;
-	width: 8.5rem;
-	height: 8.5rem;
+	width: $lamp-size;
+	height: $lamp-size;;
 	margin: 0 auto;
-	border: 2px solid #aeaeae;
+	border: 1px solid #aeaeae;
 	border-radius: 50%;
 
 	&_green {
@@ -42,8 +42,19 @@
 }
 
 .active {
-	filter: blur(.5rem);
+	filter: blur(.2rem);
 }
+
+.traffic-light-img {
+	z-index: 0;
+	position: absolute;
+	left: 50%;
+	top: 44%;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+	width: $tl-img-width;
+	height: $tl-img-height;
+}		
 
 .blink {
 	animation-name: blinker;
@@ -61,3 +72,4 @@
 	to { opacity: 0.0; }
 }
 
+@import 'media.scss';

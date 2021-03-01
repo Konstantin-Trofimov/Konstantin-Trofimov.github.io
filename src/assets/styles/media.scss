@@ -1,23 +1,12 @@
-@media (max-width: 600px) and (max-height: 735) {
-	.lamp {
+@media (min-width: 361px) and (max-width: 767px) {
+  
+  	.lamp {
 		width: 4.2rem;
 		height: 4.2rem;
 	}
 
 	.v-lamp {
-		margin-top: 77px;
-		grid-template-rows: repeat(3, 92px) 130px;
-	}
-}
-
-@media (max-width: 600px) and (min-height: 460px) {
-	.lamp {
-		width: 4.2rem;
-		height: 4.2rem;
-	}
-
-	.v-lamp {
-		margin-top: 77px;
+		margin-top: 76.5px;
 		grid-template-rows: repeat(3, 92px) 130px;
 	}
 
@@ -25,10 +14,39 @@
 		width: 262.5px;
 		height: 307px;
 	}
+	
+	.active {
+		filter: blur(.1rem);
+	}
 }
 
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1600px) and (orientation:landscape)  {
+@media  (max-width: 360px) {
+  
+  	.lamp {
+		width: 2.1rem;
+		height: 2.1rem;
+	}
+
+	.v-lamp {
+		margin-top: 70.5px;
+		grid-template-rows: repeat(3, 46px) 130px;
+		
+	}
+
+	.traffic-light-img {
+		width: 131.25px;
+		height: 153.5px;
+	}
+	
+	.active {
+		filter: blur(.05rem);
+	}
+}
+
+@media only screen and (min-device-width: 660px) 
+                   and (max-device-width: 823px) 
+                   and (orientation: landscape) {
 
 	.lamp {
 		width: 4.2rem;
@@ -36,21 +54,27 @@
 	}
 
 	.v-lamp {
-		margin-top: 77px;
+		margin-top: 76.5px;
 		grid-template-rows: repeat(3, 92px) 130px;
+	}
+
+	.traffic-light-img {
+		width: 262.5px;
+		height: 307px;
 	}
 
 	.v-timer {
-		display: none;
+		margin-top: -4rem;
 	}
 
-	.traffic-light-img {
-		width: 262.5px;
-		height: 307px;
+	.active {
+		filter: blur(.1rem);
 	}
 }
 
-@media (max-width: 568px) and (max-height: 320px)   {
+@media only screen  and (max-device-width: 659px) 
+                	and (orientation: landscape) {
+
 	.lamp {
 		width: 2.1rem;
 		height: 2.1rem;
@@ -59,15 +83,20 @@
 	.v-lamp {
 		margin-top: 70.5px;
 		grid-template-rows: repeat(3, 46px) 130px;
-		border: 1px solid #aeaeae;
-	}
-
-	.v-timer {
-		display: none;
+		
 	}
 
 	.traffic-light-img {
 		width: 131.25px;
 		height: 153.5px;
 	}
-}	
+
+	.v-timer {
+		margin-top: -4rem;
+	}
+
+	.active {
+		filter: blur(.05rem);
+	}
+  
+}
