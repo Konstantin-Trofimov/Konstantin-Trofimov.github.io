@@ -9,6 +9,7 @@
 	height: 700px;
 	display: grid;
 	grid-template-rows: repeat(3, 184px) 130px;
+	grid-template-columns: 100px;
 	align-content: center;
 	align-items: center;
 }
